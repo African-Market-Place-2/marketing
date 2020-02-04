@@ -1,0 +1,34 @@
+.mainnav {
+    background: rgba(250, 250, 250, 0.4);
+    padding: 0.5% 1%;
+    .display(column, flex-start, flex-start);
+    position: fixed;
+    height: 100vh;
+    width: 5%;
+
+    img {
+        width: 100%;
+        margin: 0 0 175px;
+
+        &:hover {
+           opacity: 0.7; 
+        }
+    }
+
+    ul {
+        .display(column, space-evenly, center);
+        height: 40vh;
+
+        li {
+
+            a {
+                font-size: 2.5rem;
+                color: @mainnavbrown;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+} // End mainnav
