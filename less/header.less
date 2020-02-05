@@ -4,15 +4,16 @@
         width: 100%;
         .headingtxt(4rem, 700, 4.5rem, lighten(@mainnavbrown, 10%));
         position: relative;
-       margin-top: 18%;
+        text-align: center;
+        margin: 12% auto 5%;
 
         h1 {
-            margin-bottom: 3%;
+            margin-bottom: 1%;
+            font-size: 3rem;
         }
 
         h2 {
-            .headingtxt(2.8rem, 600, 3.2rem, #DBCA69);
-            margin-bottom: 2.5%;
+            .headingtxt(2.3rem, 600, none, #DBCA69);
 
             span{
                 color: #668D3C;
@@ -21,11 +22,12 @@
 
         a {
             .links(@mainhdrtxt, lighten(@mainnavbrown, 10%), 1.3rem, 600);
-            padding: 1.5% 4%;
+            padding: 1.3% 3.5%;
             border-radius: 8px;
 
             &:hover {
-                background: lighten(@mainnavbrown, 15%);
+                background: @mainhdrtxt;
+                color: lighten(@mainnavbrown, 15%);
             }
         }
     }

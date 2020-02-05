@@ -1,46 +1,32 @@
 .prodsec {
-    .display(row-reverse, space-around, flex-start);
+    .display(row, space-evenly, center);
     width:100%;
-    height: 100vh;
-    padding:4%;
+    padding:1%;
     margin: 18% auto;
     background: lighten(@mainnavbrown, 10%);
 
-    h2 {
-        .headingtxt(4rem, 600, 3rem, whitesmoke);
-        position: absolute;
-        z-index: 4;
-        top:117%;
-        right: 38%;
-    }
 
-    .prodcopy{
-        width: 50%;
-        text-align:right;
+    div {
 
 
-        
-    
+
+        h2 {
+            .headingtxt(4rem, 600, 3rem, whitesmoke);
+           
+        }
+
+        img {
+            width: 28%;
+            border-radius: 8px;
+        }
+
         p {
             color: whitesmoke;
             font-size: 2.5rem;
             line-height: 3rem;
             width: 100%;
-            position: relative;
-            left: 16%;
-            top:140px;
+           
         }
     }
-
-    .img {
-        overflow: hidden;
-        width: 28%;
-        height: 51vh;
-        border-radius: 50%;
-        background: url("../imgs/marketwoman.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 8px solid whitesmoke;
-    }
-}
+    
+} // end prodsec
