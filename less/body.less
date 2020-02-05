@@ -85,7 +85,7 @@
 
   a {
     @media @mobile {
-      .links(lighten(@mainnavbrown, 15%), @mainhdrtxt, 2rem, 600);
+      .links(@mainhdrtxt, @mainnavbrown, 2rem, 600);
       display: block;
       margin: 0 auto;
       width: 50%;
@@ -93,6 +93,11 @@
       padding: 3.5%;
       border-radius: 5px;
       text-transform: uppercase;
+    }
+
+    &:hover {
+        background: @mainhdrtxt;
+        color: @mainnavbrown;
     }
   } // end a
 } // end .ctabtn

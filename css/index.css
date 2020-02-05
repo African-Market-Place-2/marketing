@@ -448,9 +448,9 @@ html {
 }
 @media (min-width: 250px) {
   .ctabtn a {
-    color: #cf5627;
+    color: whitesmoke;
     text-decoration: none;
-    background: whitesmoke;
+    background: #8f3b1b;
     font-size: 2rem;
     font-weight: 600;
     display: block;
@@ -461,6 +461,10 @@ html {
     border-radius: 5px;
     text-transform: uppercase;
   }
+}
+.ctabtn a:hover {
+  background: whitesmoke;
+  color: #8f3b1b;
 }
 @media (min-width: 250px) {
   footer {
