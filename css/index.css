@@ -378,7 +378,7 @@ html {
   }
 }
 @media (min-width: 250px) {
-  .prodsec .getfound {
+  .prodsec .prodinfo {
     margin: 7% 0;
   }
 }
@@ -386,12 +386,17 @@ html {
   font-size: 4rem;
   font-weight: 600;
   line-height: 3rem;
-  color: whitesmoke;
+  color: #DBCA69;
 }
 @media (min-width: 250px) {
   .prodsec div h2 {
     font-size: 1.8rem;
     margin: 2% 0;
+  }
+}
+@media (min-width: 250px) {
+  .prodsec div h2 i {
+    transform: rotate(-25deg);
   }
 }
 @media (min-width: 250px) {
