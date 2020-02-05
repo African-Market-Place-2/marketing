@@ -63,24 +63,14 @@
 } // end prodsec
 
 // GET STARTED CTA SECTION STYLES
-.ctasec {
-  @media @mobile {
-    background: url("../imgs/bghome.jpg");
-    .bgimg(center);
-    height: 50vh;
-    filter: blur(2px);
-  }
-} // end ctasec
-
 .ctabtn {
   @media @mobile {
     display: block;
-    margin: 0 auto;
+    margin: 20% auto;
     width: 100%;
     text-align: center;
-    position: absolute;
+    position: relative;
     z-index: 99;
-    top: 395%;
   }
 
   a {
@@ -96,9 +86,8 @@
     }
 
     &:hover {
-        background: @mainhdrtxt;
-        color: @mainnavbrown;
+      background: @mainhdrtxt;
+      color: @mainnavbrown;
     }
   } // end a
 } // end .ctabtn
-

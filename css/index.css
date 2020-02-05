@@ -426,24 +426,13 @@ html {
   }
 }
 @media (min-width: 250px) {
-  .ctasec {
-    background: url("../imgs/bghome.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    filter: blur(2px);
-  }
-}
-@media (min-width: 250px) {
   .ctabtn {
     display: block;
-    margin: 0 auto;
+    margin: 20% auto;
     width: 100%;
     text-align: center;
-    position: absolute;
+    position: relative;
     z-index: 99;
-    top: 395%;
   }
 }
 @media (min-width: 250px) {
@@ -469,7 +458,6 @@ html {
 @media (min-width: 250px) {
   footer {
     position: absolute;
-    top: 417%;
     z-index: 99;
     margin: 0 auto;
     color: #dbca69;
