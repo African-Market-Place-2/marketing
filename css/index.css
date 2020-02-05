@@ -104,11 +104,24 @@ body {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
 }
+@media (min-width: 250px) {
+  body {
+    background-image: url("../imgs/marketwoman.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 body video {
   width: 100%;
   position: fixed;
   z-index: -4;
   top: 0;
+}
+@media (min-width: 250px) {
+  body video {
+    display: none;
+  }
 }
 ol,
 ul {
@@ -146,6 +159,7 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  text-align: center;
 }
 .mainnav .logo {
   display: flex;
@@ -155,27 +169,50 @@ html {
   width: 40%;
 }
 .mainnav .logo img {
-  width: 18%;
+  width: 100px;
   display: inline-block;
   margin: 0;
+  position: absolute;
+  left: 0.5%;
+  top: 0.5%;
+}
+@media (min-width: 250px) {
+  .mainnav .logo img {
+    width: 15%;
+    top: 0.2%;
+    left: 0.2%;
+  }
 }
 .mainnav .logo img:hover {
   opacity: 0.7;
 }
 .mainnav .logo h1 {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 2.8rem;
   color: black;
-  width: 50%;
-  position: relative;
-  right: 46%;
+  width: 275px;
+  position: absolute;
+  left: 4.8%;
+  top: 5%;
+}
+@media (min-width: 250px) {
+  .mainnav .logo h1 {
+    display: none;
+  }
 }
 .mainnav .logo h1 span {
   font-weight: lighter;
 }
 .mainnav nav {
   width: 50%;
+}
+@media (min-width: 250px) {
+  .mainnav nav {
+    width: 100%;
+    position: relative;
+    right: 7%;
+  }
 }
 .mainnav nav ul {
   display: flex;
@@ -184,22 +221,49 @@ html {
   align-items: flex-start;
   width: 70%;
 }
+@media (min-width: 250px) {
+  .mainnav nav ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .mainnav nav ul li a {
   font-size: 2.3rem;
   color: #cf5627;
 }
+@media (min-width: 250px) {
+  .mainnav nav ul li a {
+    font-size: 1.3rem;
+  }
+}
 .mainnav nav ul li a:hover {
   color: whitesmoke;
 }
-.mainnav .login a {
+.mainnav .login .a {
   color: whitesmoke;
   text-decoration: none;
   background: none;
   font-size: 1rem;
   font-weight: bolder;
 }
-.mainnav .login a:hover {
+@media (min-width: 250px) {
+  .mainnav .login .a {
+    display: none;
+  }
+}
+.mainnav .login .a:hover {
   color: #cf5627;
+}
+@media (min-width: 250px) {
+  .mainnav .login a i {
+    color: whitesmoke;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 250px) {
+  .mainnav .login a i:hover {
+    color: #cf5627;
+  }
 }
 .header {
   width: 100%;

@@ -25,13 +25,25 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	
+	@media @mobile  {
+		background-image: url("../imgs/marketwoman.jpeg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	
+	}
 
     video {
         width: 100%;
         position: fixed;
         z-index: -4;
-        top:0;
+		top:0;
+		
+		@media @mobile {
+			display: none;
+		}
     }
 }
 ol, ul {
