@@ -279,6 +279,9 @@ html {
     color: #cf5627;
   }
 }
+#aboutpg .mainnav nav ul li .current {
+  color: #cf5627;
+}
 .header {
   width: 100%;
 }
@@ -313,7 +316,7 @@ html {
   font-size: 2.3rem;
   font-weight: 600;
   line-height: none;
-  color: #DBCA69;
+  color: #dbca69;
 }
 @media (min-width: 250px) {
   .header .headertxt h2 {
@@ -322,7 +325,7 @@ html {
   }
 }
 .header .headertxt h2 span {
-  color: #668D3C;
+  color: #668d3c;
 }
 .header .headertxt a {
   color: whitesmoke;
@@ -355,6 +358,27 @@ html {
 @media (min-width: 250px) {
   .header .bodybgoverlay {
     background: rgba(0, 0, 0, 0.8);
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abthdr {
+    padding: 0 7%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abthdr h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 0;
+    color: #dbca69;
+    margin-top: 60%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abthdr p {
+    color: whitesmoke;
+    line-height: 1.6rem;
+    margin-top: 15%;
   }
 }
 .prodsec {
@@ -455,6 +479,86 @@ html {
   background: whitesmoke;
   color: #8f3b1b;
 }
+#aboutpg {
+  background: black;
+}
+#aboutpg .abtsec {
+  color: whitesmoke;
+  background: #cf5627;
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 7%;
+    margin-top: 15%;
+    text-align: left;
+  }
+}
+#aboutpg .abtsec h1 {
+  color: #dbca69;
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec h1 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 17%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec h2 {
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 4%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec p {
+    font-size: 0.8rem;
+    margin-bottom: 4%;
+  }
+}
+#aboutpg .abtsec hr {
+  border: none;
+  background: none;
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec hr {
+    width: 20%;
+    margin: 5% 0;
+    border-bottom: 0.3rem dotted rgba(0, 0, 0, 0.1);
+  }
+}
+#aboutpg .abtsec .abtsecppl img {
+  border-radius: 10px;
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec .abtsecppl img {
+    width: 70%;
+    margin-bottom: 6%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec .abtsecppl a {
+    color: #262626;
+    font-size: 2rem;
+    margin-bottom: 10%;
+    text-decoration: none;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec .abtsecppl a:hover {
+    color: #dbca69;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg .abtsec .abtsecppl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 @media (min-width: 250px) {
   footer {
     position: absolute;
@@ -488,4 +592,7 @@ html {
   footer p span {
     color: #668d3c;
   }
+}
+#aboutpg footer {
+  background: #262626;
 }
