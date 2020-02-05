@@ -4,8 +4,6 @@
   width: 100%;
   text-align: center;
 
-  @media @mobile {
-  }
 
   .logo {
     .display(row, flex-start, center);
@@ -134,12 +132,40 @@
         nav {
             ul {
                 li {
-                    .current{
+                  a {
 
-                        color:lighten(@mainnavbrown, 15%);
+                    @media @tablet {
+                      font-size: 2rem;
                     }
+                  }
+
+                  .current{
+
+                    color:lighten(@mainnavbrown, 15%);
+                }
                 }
             }
         }
-    }
+
+        .logo {
+
+          h1 {
+
+
+            @media @tablet {
+              font-size: 1.4rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+
+        .login {
+          i {
+
+          @media @tablet {
+            font-size: 2rem;
+          }
+          }
+        }
+    } // .mainnav
 }
