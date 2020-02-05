@@ -1,71 +1,92 @@
 .header {
-    width:100%;
-    .headertxt {
-        width: 100%;
-        .headingtxt(4rem, 700, 4.5rem, lighten(@mainnavbrown, 10%));
-        position: relative;
-        text-align: center;
-        margin: 12% auto 5%;
+  width: 100%;
+  .headertxt {
+    width: 100%;
+    .headingtxt(4rem, 700, 4.5rem, lighten(@mainnavbrown, 10%));
+    position: relative;
+    text-align: center;
+    margin: 12% auto 5%;
 
-        @media @mobile {
-            margin-top: 45%;
-        }
-
-        h1 {
-            margin-bottom: 1%;
-            font-size: 3rem;
-
-            @media @mobile {
-                font-size: 1.7rem;
-                width:65%;
-                line-height: normal;
-                margin: 0 auto;
-            }
-        }
-
-        h2 {
-            .headingtxt(2.3rem, 600, none, #DBCA69);
-
-            @media @mobile {
-                font-size: 1rem;
-                line-height: normal;
-            }
-
-            span{
-                color: #668D3C;
-            }
-        }
-
-        a {
-            .links(@mainhdrtxt, lighten(@mainnavbrown, 10%), 1.3rem, 600);
-            padding: 1.3% 3.5%;
-            border-radius: 8px;
-
-            @media @mobile {
-                font-size: 0.7rem;
-                padding: 3% 7%;
-                border-radius: 5px;
-                
-            }
-
-            &:hover {
-                background: @mainhdrtxt;
-                color: lighten(@mainnavbrown, 15%);
-            }
-        }
+    @media @mobile {
+      margin-top: 45%;
     }
 
-    .bodybgoverlay {
-        position: fixed;
-        top: 0;
-        z-index: -3;
-        background: rgba(0,0,0,0.6);
-        width: 100%;
-        height: 100vh;
+    h1 {
+      margin-bottom: 1%;
+      font-size: 3rem;
 
-        @media @mobile {
-            background: rgba(0,0,0,0.8);
-        }
-
+      @media @mobile {
+        font-size: 1.7rem;
+        width: 65%;
+        line-height: normal;
+        margin: 0 auto;
+      }
     }
+
+    h2 {
+      .headingtxt(2.3rem, 600, none, #dbca69);
+
+      @media @mobile {
+        font-size: 1rem;
+        line-height: normal;
+      }
+
+      span {
+        color: #668d3c;
+      }
+    }
+
+    a {
+      .links(@mainhdrtxt, lighten(@mainnavbrown, 10%), 1.3rem, 600);
+      padding: 1.3% 3.5%;
+      border-radius: 8px;
+
+      @media @mobile {
+        font-size: 0.7rem;
+        padding: 3% 7%;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        background: @mainhdrtxt;
+        color: lighten(@mainnavbrown, 15%);
+      }
+    }
+  }
+
+  .bodybgoverlay {
+    position: fixed;
+    top: 0;
+    z-index: -3;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+
+    @media @mobile {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
 }
+
+// ABOUT PAGE STYLES
+#aboutpg {
+  .abthdr {
+    @media @mobile {
+      padding: 0 7%;
+    }
+    h1 {
+      @media @mobile {
+        .headingtxt(2rem, 800, 0, #dbca69);
+        margin-top: 60%;
+      }
+    } // end h1
+
+    p {
+      @media @mobile {
+        color: @mainhdrtxt;
+        line-height: 1.6rem;
+        margin-top:15%;
+      }
+    } // end p
+  } // end .abthdr
+} // end #aboutpg

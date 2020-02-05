@@ -91,3 +91,94 @@
     }
   } // end a
 } // end .ctabtn
+
+// ABOUT PAGE STYLES
+#aboutpg {
+  background: black;
+  .abtsec {
+    color: @mainhdrtxt;
+    background: lighten(@mainnavbrown, 15%);
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7%;
+      margin-top:15%;
+      text-align: left;
+    }
+
+    h1 {
+        color: #dbca69;
+
+        @media @mobile {
+            font-weight: 800;
+            font-size: 1.3rem;
+            margin-top: 17%;
+        }
+    } //end h1
+
+    h2 {
+
+        @media @mobile {
+            font-weight: 800;
+            font-size:0.9rem;
+            margin-bottom: 4%;
+        }
+    } // end h2
+
+    p {
+
+        @media @mobile {
+            font-size: 0.8rem;
+            margin-bottom: 4%;
+        }
+    } // end p
+
+    hr {
+        border: none;
+        background: none;
+        
+
+        @media @mobile {
+            width:20%;
+            margin: 5% 0;
+            border-bottom:0.3rem dotted rgba(0,0,0, 0.1);
+        }
+    }
+
+    .abtsecppl {
+      img {
+        border-radius: 10px;
+
+        @media @mobile {
+          width: 70%;
+          margin-bottom: 6%;
+        }
+      } // end img
+
+      a {
+
+        @media @mobile {
+            color: lighten(black, 15%);
+            font-size: 2rem;
+            margin-bottom: 10%;
+            text-decoration: none;
+        }
+
+        &:hover {
+
+            @media @mobile {
+                color: #dbca69;
+            }
+        }
+      } // end a
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    } // end .abtsecppl
+  } // end .abtsec
+} // end #aboutpg
