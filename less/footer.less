@@ -1,0 +1,40 @@
+footer {
+    @media @mobile {
+      position: absolute;
+      top: 417%;
+      z-index: 99;
+      margin: 0 auto;
+      color: #dbca69;
+      font-weight: bolder;
+      background: rgba(143, 59, 27, 1);
+      width: 100%;
+      padding: 3%;
+      text-align: center;
+    }
+  
+    i {
+      @media @mobile {
+        font-size: 1rem;
+        margin: 3% 1% 5%;
+      }
+  
+      &:hover {
+        @media @mobile {
+          color: @mainhdrtxt;
+        }
+      } // end &:hover
+    } // end i
+  
+    p {
+      @media @mobile {
+        font-size: 0.5rem;
+      }
+  
+      span {
+        @media @mobile {
+          color: #668d3c;
+        }
+      } // end span
+    } // end p
+  } // end footer
+  
