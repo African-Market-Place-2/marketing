@@ -1,32 +1,56 @@
 .prodsec {
-    .display(row, space-evenly, center);
-    width:100%;
-    padding:1%;
-    margin: 18% auto;
-    background: lighten(@mainnavbrown, 10%);
+  .display(row, space-evenly, center);
+  width: 100%;
+  padding: 1%;
+  margin: 18% auto;
+  background: lighten(@mainnavbrown, 10%);
 
+  @media @mobile {
+    .display(column, space-evenly, center);
+    padding: 7%;
+    background: rgba(143, 59, 27, 1);
+  }
 
-    div {
+  .getfound {
+      @media @mobile {
+          margin: 7% 0;
+      }
+  }
 
+  div {
+    h2 {
+      .headingtxt(4rem, 600, 3rem, whitesmoke);
 
-
-        h2 {
-            .headingtxt(4rem, 600, 3rem, whitesmoke);
-           
-        }
-
-        img {
-            width: 28%;
-            border-radius: 8px;
-        }
-
-        p {
-            color: whitesmoke;
-            font-size: 2.5rem;
-            line-height: 3rem;
-            width: 100%;
-           
-        }
+      @media @mobile {
+        font-size: 1.8rem;
+        margin: 2% 0;
+      }
     }
-    
+    .imgcrop {
+
+        @media @mobile {
+            width: 100%;
+            overflow: hidden;
+            height: 33vh;
+        }
+      img {
+        @media @mobile {
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    p {
+      color: whitesmoke;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      width: 100%;
+
+      @media @mobile {
+          font-size: 1rem;
+          line-height: 1.5rem;
+      }
+    }
+  }
 } // end prodsec
