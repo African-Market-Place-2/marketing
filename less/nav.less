@@ -4,7 +4,6 @@
   width: 100%;
   text-align: center;
 
-
   .logo {
     .display(row, flex-start, center);
     width: 40%;
@@ -88,7 +87,6 @@
           &:hover {
             color: lighten(@mainnavbrown, 15%);
           }
-          
         } // end a
       } // end li
     }
@@ -124,48 +122,88 @@
   } // end login
 } // End mainnav
 
-
-
-// ABOUT PAGE STYLES 
+// ABOUT PAGE STYLES
 #aboutpg {
-    .mainnav {
-        nav {
-            ul {
-                li {
-                  a {
+  .mainnav {
+    nav {
+      @media @desktop {
+        text-align: center;
+        margin: 0 auto;
+      
+      }
 
-                    @media @tablet {
-                      font-size: 2rem;
-                    }
-                  }
+      ul {
 
-                  .current{
-
-                    color:lighten(@mainnavbrown, 15%);
-                }
-                }
-            }
+        @media @desktop {
+          width: 80%;
+        
         }
-
-        .logo {
-
-          h1 {
-
-
+        li {
+          a {
             @media @tablet {
-              font-size: 1.4rem;
-              line-height: 1.2rem;
+              font-size: 2rem;
+            }
+
+            &:hover {
+              @media @desktop {
+                color: lighten(@mainnavbrown, 15%);
+              }
+            }
+
+            @media @desktop {
+              font-size: 2.8rem;
+              color: @mainhdrtxt;
             }
           }
-        }
 
-        .login {
-          i {
-
-          @media @tablet {
-            font-size: 2rem;
-          }
+          .current {
+            color: lighten(@mainnavbrown, 15%);
           }
         }
-    } // .mainnav
+      }
+    }
+
+    .logo {
+      h1 {
+        &:hover {
+          @media @desktop {
+            color: lighten(@mainnavbrown, 15%);
+          }
+        }
+        @media @tablet {
+          font-size: 1.4rem;
+          line-height: 1.2rem;
+
+          @media @desktop {
+            font-size: 1.9rem;
+            line-height: 1.8rem;
+          }
+        }
+      }
+    }
+
+    .login {
+      @media @desktop {
+        width: 20%;
+        text-align: right;
+      }
+
+      i {
+        @media @tablet {
+          font-size: 2rem;
+        }
+        @media @desktop {
+          display: none;
+        }
+      }
+
+      .a {
+        @media @desktop {
+          display: block;
+          width: 100%;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  } // .mainnav
 }

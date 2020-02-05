@@ -78,6 +78,10 @@
     @media @tablet {
       padding: 0 4%;
     }
+
+    @media @desktop {
+        text-align: center;
+    }
     h1 {
       @media @mobile {
         .headingtxt(2rem, 800, 0, #dbca69);
@@ -87,6 +91,11 @@
       @media @tablet {
         .headingtxt(3.5rem, 800, 0, #dbca69);
         margin-top: 30%;
+      }
+
+      @media @desktop {
+        .headingtxt(5rem, 800, 0, #dbca69);
+        margin-top: 18%;
       }
     } // end h1
 
@@ -101,6 +110,14 @@
         font-size: 1.8rem;
         line-height: 2.5rem;
         margin-top: 8%;
+      }
+
+      @media @desktop {
+          font-size: 3rem;
+          line-height: 3.5rem;
+          color: darken(@mainhdrtxt, 15%);
+          width: 60%;
+          margin: 4% auto 0;
       }
     } // end p
   } // end .abthdr

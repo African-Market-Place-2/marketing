@@ -94,7 +94,6 @@
 
 // ABOUT PAGE STYLES
 #aboutpg {
-  background: black;
   .abtsec {
     color: @mainhdrtxt;
     background: lighten(@mainnavbrown, 15%);
@@ -104,69 +103,83 @@
       flex-direction: column;
       justify-content: space-evenly;
       padding: 7%;
-      margin-top:15%;
+      margin-top: 15%;
       text-align: left;
     }
 
+    @media @desktop {
+      margin-top: 9%;
+      padding-top: 7%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
     h1 {
-        color: #dbca69;
+      color: #dbca69;
 
-        @media @mobile {
-            font-weight: 800;
-            font-size: 1.3rem;
-            margin-top: 17%;
-        }
+      @media @mobile {
+        font-weight: 800;
+        font-size: 1.3rem;
+        margin-top: 17%;
+      }
 
-        @media @tablet {
-            font-weight: 800;
-            font-size: 2.1rem;
-            margin-top: 10%;
-        }
+      @media @tablet {
+        font-weight: 800;
+        font-size: 2.1rem;
+        margin-top: 10%;
+      }
+
+      @media @desktop {
+        margin-top: 2%;
+        font-size: 2.8rem;
+      }
     } //end h1
 
     h2 {
+      @media @mobile {
+        font-weight: 800;
+        font-size: 0.9rem;
+        margin-bottom: 4%;
+      }
 
-        @media @mobile {
-            font-weight: 800;
-            font-size:0.9rem;
-            margin-bottom: 4%;
-        }
-
-        @media @tablet {
-            font-size:1.8rem;
-            margin-bottom: 4%;
-        }
+      @media @tablet {
+        font-size: 1.8rem;
+        margin-bottom: 4%;
+      }
     } // end h2
 
     p {
+      @media @mobile {
+        font-size: 0.8rem;
+        margin-bottom: 4%;
+      }
 
-        @media @mobile {
-            font-size: 0.8rem;
-            margin-bottom: 4%;
-        }
-
-        @media @tablet {
-            font-size: 1.5rem;
-            margin-bottom: 4%;
-        }
+      @media @tablet {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+      }
     } // end p
 
     hr {
-        border: none;
-        background: none;
-        
+      border: none;
+      background: none;
 
-        @media @mobile {
-            width:20%;
-            margin: 5% 0;
-            border-bottom:0.3rem dotted rgba(0,0,0, 0.1);
-        }
+      @media @mobile {
+        width: 20%;
+        margin: 5% 0;
+        border-bottom: 0.3rem dotted rgba(0, 0, 0, 0.1);
+      }
 
-        @media @tablet {
-            width:20%;
-            margin: 5% 0;
-            border-bottom:0.6rem dotted rgba(0,0,0, 0.1);
-        }
+      @media @tablet {
+        width: 20%;
+        margin: 5% 0;
+        border-bottom: 0.6rem dotted rgba(0, 0, 0, 0.1);
+      }
+
+      @media @desktop {
+        display: block;
+      }
     }
 
     .abtsecppl {
@@ -179,30 +192,32 @@
         }
 
         @media @tablet {
-            width: 75%;
-            margin-bottom: 6%;
-          }
+          width: 75%;
+          margin-bottom: 6%;
+        }
+
+        @media @desktop {
+          width: 100%;
+        }
       } // end img
 
       a {
-
         @media @mobile {
-            color: lighten(black, 15%);
-            font-size: 2rem;
-            margin-bottom: 10%;
-            text-decoration: none;
+          color: lighten(black, 15%);
+          font-size: 2rem;
+          margin-bottom: 10%;
+          text-decoration: none;
         }
 
         @media @tablet {
-            font-size: 2.5rem;
-            margin-bottom: 10%;
+          font-size: 2.5rem;
+          margin-bottom: 10%;
         }
 
         &:hover {
-
-            @media @mobile {
-                color: #dbca69;
-            }
+          @media @mobile {
+            color: #dbca69;
+          }
         }
       } // end a
 
@@ -212,5 +227,41 @@
         justify-content: space-around;
       }
     } // end .abtsecppl
+
+    .leader {
+      h1 {
+        @media @desktop {
+          text-align: center;
+        }
+      }
+      hr {
+        @media @desktop {
+            margin: 9% auto 11%;
+            width: 60%;
+          }
+      }
+    }
+
+    .staff {
+      @media @desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .title {
+          @media @desktop {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+          }
+
+          hr {
+            @media @desktop {
+              margin: 3% auto 4%;
+            }
+          }
+        }
+      }
+    }
   } // end .abtsec
 } // end #aboutpg

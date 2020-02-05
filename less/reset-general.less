@@ -28,12 +28,25 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	
 	@media @mobile  {
-		background-image: url("../imgs/marketwoman.jpeg");
+		background: rgb(0, 0, 0, 0.3);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	
 	}
+
+	video {
+        width: 100%;
+        position: fixed;
+        z-index: -4;
+		top:0;
+		
+		@media @mobile {
+			display: none;
+		}
+    } 
+
+}
 
     video {
         width: 100%;
@@ -45,7 +58,7 @@ body {
 			display: none;
 		}
     } 
-} // end body
+ // end body
 ol, ul {
 	list-style: none;
 }
@@ -72,3 +85,12 @@ html {
     max-width: 100%;
 }
 
+#aboutpg {
+	
+	
+		@media @tablet {
+			background-image: none;
+			background: black;
+		}
+	
+}
