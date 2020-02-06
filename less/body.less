@@ -13,8 +13,10 @@
 
   @media @desktop {
     margin-top: 15%;
-    padding: 2%;
+    padding: 4% 1%;
     .display(row, space-evenly, flex-start);
+    flex-wrap: nowrap;
+    height: 100vh;
   }
 
   .prodinfo {
@@ -23,7 +25,7 @@
     }
 
     @media @desktop {
-        width: 27%;
+        width: 30%;
         margin: 0;
     }
   }
@@ -38,7 +40,7 @@
       }
 
       @media @desktop {
-          font-size: 2.7rem;
+          font-size: 1.5rem;
       }
 
       i {
@@ -47,7 +49,7 @@
         }
 
         @media @desktop {
-            margin: 3% 0;
+            margin: 1% 0;
         }
       }
     }
@@ -57,10 +59,23 @@
         overflow: hidden;
         height: 33vh;
       }
+
+      @media @tablet {
+          height: 45vh;
+      }
+
+      @media @desktop {
+          height: 30vh;
+          margin-bottom:0;
+      }
       img {
         @media @mobile {
           width: 100%;
           border-radius: 8px;
+        }
+
+        @media @desktop {
+            margin-bottom:0;
         }
       }
     }
@@ -76,9 +91,14 @@
         line-height: 1.5rem;
       }
 
+      @media @tablet {
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+      }
+
       @media @desktop {
-          font-size: 1.8rem;
-          line-height: 2.5rem;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
       }
     }
   }

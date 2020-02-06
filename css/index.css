@@ -209,6 +209,12 @@ html {
     top: 1%;
   }
 }
+@media (min-width: 500px) {
+  .mainnav h1 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+}
 @media (min-width: 800px) {
   .mainnav h1 {
     font-size: 1.9rem;
@@ -263,6 +269,9 @@ nav ul {
     width: 80%;
   }
 }
+nav ul li .activelink {
+  color: #cf5627;
+}
 nav ul li a {
   font-size: 2.3rem;
   color: whitesmoke;
@@ -270,6 +279,11 @@ nav ul li a {
 @media (min-width: 250px) {
   nav ul li a {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 500px) {
+  nav ul li a {
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 800px) {
@@ -313,6 +327,11 @@ nav ul li a:hover {
   .login a i {
     color: whitesmoke;
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 500px) {
+  .login a i {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 250px) {
@@ -409,6 +428,11 @@ nav ul li a:hover {
   text-align: center;
   margin: 12% auto 5%;
 }
+@media (min-width: 500px) {
+  .header .headertxt {
+    width: 100%;
+  }
+}
 @media (min-width: 250px) {
   .header .headertxt {
     margin-top: 45%;
@@ -416,15 +440,12 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   .header .headertxt {
-    margin-top: 15%;
+    margin-top: 20%;
   }
-}
-.header .headertxt h1 {
-  margin-bottom: 1%;
-  font-size: 3rem;
 }
 @media (min-width: 250px) {
   .header .headertxt h1 {
+    color: #DBCA69;
     font-size: 1.7rem;
     width: 65%;
     line-height: normal;
@@ -435,19 +456,21 @@ nav ul li a:hover {
   .header .headertxt h1 {
     font-size: 2rem;
     font-weight: 800;
-    line-height: 0;
+    line-height: 2rem;
     color: #dbca69;
     width: 100%;
+    padding: 1% 19%;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 800px) {
   .header .headertxt h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
-    line-height: 0;
+    line-height: 4.1rem;
     color: #dbca69;
-    margin-bottom: 3.3%;
-    width: 80%;
+    margin: 0 auto 3.3%;
+    width: 100%;
   }
 }
 .header .headertxt h2 {
@@ -462,10 +485,15 @@ nav ul li a:hover {
     line-height: normal;
   }
 }
+@media (min-width: 500px) {
+  .header .headertxt h2 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 800px) {
   .header .headertxt h2 {
-    font-size: 3.5rem;
-    margin-bottom: 2.8%;
+    font-size: 2.5rem;
+    margin-bottom: 1%;
     position: relative;
     top: 0;
   }
@@ -491,8 +519,8 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   .header .headertxt a {
-    font-size: 1.5rem;
-    padding: 1% 2%;
+    font-size: 1rem;
+    padding: 2% 5%;
     border-radius: 10px;
   }
 }
@@ -548,7 +576,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   #aboutpg .abthdr h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 0;
     color: #dbca69;
@@ -571,10 +599,10 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   #aboutpg .abthdr p {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
     color: #cfcfcf;
-    width: 60%;
+    width: 80%;
     margin: 4% auto 0;
   }
 }
@@ -597,11 +625,13 @@ nav ul li a:hover {
 @media (min-width: 800px) {
   .prodsec {
     margin-top: 15%;
-    padding: 2%;
+    padding: 4% 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100vh;
   }
 }
 @media (min-width: 250px) {
@@ -611,7 +641,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   .prodsec .prodinfo {
-    width: 27%;
+    width: 30%;
     margin: 0;
   }
 }
@@ -629,7 +659,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   .prodsec div h2 {
-    font-size: 2.7rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 250px) {
@@ -639,7 +669,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   .prodsec div h2 i {
-    margin: 3% 0;
+    margin: 1% 0;
   }
 }
 @media (min-width: 250px) {
@@ -649,10 +679,26 @@ nav ul li a:hover {
     height: 33vh;
   }
 }
+@media (min-width: 500px) {
+  .prodsec div .imgcrop {
+    height: 45vh;
+  }
+}
+@media (min-width: 800px) {
+  .prodsec div .imgcrop {
+    height: 30vh;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 250px) {
   .prodsec div .imgcrop img {
     width: 100%;
     border-radius: 8px;
+  }
+}
+@media (min-width: 800px) {
+  .prodsec div .imgcrop img {
+    margin-bottom: 0;
   }
 }
 .prodsec div p {
@@ -667,10 +713,16 @@ nav ul li a:hover {
     line-height: 1.5rem;
   }
 }
+@media (min-width: 500px) {
+  .prodsec div p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
 @media (min-width: 800px) {
   .prodsec div p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 250px) {
@@ -905,7 +957,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   footer i {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     margin: 2% 1%;
   }
 }
@@ -926,7 +978,7 @@ nav ul li a:hover {
 }
 @media (min-width: 800px) {
   footer p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 250px) {
@@ -934,16 +986,58 @@ nav ul li a:hover {
     color: #668d3c;
   }
 }
-#aboutpg footer {
-  background: #262626;
+@media (min-width: 250px) {
+  #aboutpg footer {
+    position: absolute;
+    z-index: 99;
+    margin: 0 auto;
+    color: #dbca69;
+    font-weight: bolder;
+    background: #262626;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg footer i {
+    font-size: 1rem;
+    margin: 3% 1% 5%;
+  }
+}
+@media (min-width: 500px) {
+  #aboutpg footer i {
+    font-size: 1.9rem;
+  }
 }
 @media (min-width: 800px) {
   #aboutpg footer i {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
+    margin: 2% 1%;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg footer i:hover {
+    color: whitesmoke;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg footer p {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 500px) {
+  #aboutpg footer p {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 800px) {
   #aboutpg footer p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 250px) {
+  #aboutpg footer p span {
+    color: #668d3c;
   }
 }

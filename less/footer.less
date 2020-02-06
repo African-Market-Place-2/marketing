@@ -22,7 +22,7 @@ footer {
       }
 
       @media @desktop {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         margin:2% 1%;
       }
   
@@ -43,7 +43,7 @@ footer {
       }
 
       @media @desktop {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
       }
   
       span {
@@ -57,20 +57,59 @@ footer {
   #aboutpg {
 
     footer {
-        background: lighten(black, 15%);
-
-        i {
-
-          @media @desktop {
-            font-size: 3.5rem;
-          }
+      @media @mobile {
+        position: absolute;
+        z-index: 99;
+        margin: 0 auto;
+        color: #dbca69;
+        font-weight: bolder;
+        background:lighten(black, 15%);
+        width: 100%;
+        padding: 3%;
+        text-align: center;
+      }
+    
+      i {
+        @media @mobile {
+          font-size: 1rem;
+          margin: 3% 1% 5%;
         }
-
-        p {
-          @media @desktop {
-            font-size: 1.4rem;
-          }
+  
+        @media @tablet {
+          font-size: 1.9rem;
         }
-    }
+  
+        @media @desktop {
+          font-size: 2.2rem;
+          margin:2% 1%;
+        }
+    
+        &:hover {
+          @media @mobile {
+            color: @mainhdrtxt;
+          }
+        } // end &:hover
+      } // end i
+    
+      p {
+        @media @mobile {
+          font-size: 0.5rem;
+        }
+  
+        @media @tablet {
+          font-size: 0.9rem;
+        }
+  
+        @media @desktop {
+          font-size: 1.3rem;
+        }
+    
+        span {
+          @media @mobile {
+            color: #668d3c;
+          }
+        } // end span
+      } // end p
+    } // end footer
   }
   
