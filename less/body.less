@@ -1,9 +1,6 @@
 // PRODUCT SECTION STYLES
 .prodsec {
-  .display(row, space-evenly, center);
-  width: 100%;
-  padding: 1%;
-  margin: 18% auto;
+  width: 100%;  
   background: lighten(@mainnavbrown, 10%);
 
   @media @mobile {
@@ -11,11 +8,23 @@
     padding: 7%;
     background: rgba(143, 59, 27, 1);
     margin-bottom: 0;
+    margin-top: 29%;
+  }
+
+  @media @desktop {
+    margin-top: 15%;
+    padding: 2%;
+    .display(row, space-evenly, flex-start);
   }
 
   .prodinfo {
     @media @mobile {
       margin: 7% 0;
+    }
+
+    @media @desktop {
+        width: 27%;
+        margin: 0;
     }
   }
 
@@ -28,9 +37,17 @@
         margin: 2% 0;
       }
 
+      @media @desktop {
+          font-size: 2.7rem;
+      }
+
       i {
         @media @mobile {
           transform: rotate(-25deg);
+        }
+
+        @media @desktop {
+            margin: 3% 0;
         }
       }
     }
@@ -58,6 +75,11 @@
         font-size: 1rem;
         line-height: 1.5rem;
       }
+
+      @media @desktop {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+      }
     }
   }
 } // end prodsec
@@ -83,6 +105,10 @@
       padding: 3.5%;
       border-radius: 5px;
       text-transform: uppercase;
+    }
+
+    @media @desktop {
+        display: none;
     }
 
     &:hover {

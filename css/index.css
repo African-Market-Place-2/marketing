@@ -123,15 +123,9 @@ body video {
     display: none;
   }
 }
-video {
-  width: 100%;
-  position: fixed;
-  z-index: -4;
-  top: 0;
-}
-@media (min-width: 250px) {
-  video {
-    display: none;
+@media (min-width: 800px) {
+  body video {
+    display: block;
   }
 }
 ol,
@@ -173,7 +167,7 @@ html {
   padding: 1% 2%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
   text-align: center;
@@ -185,25 +179,17 @@ html {
   align-items: center;
   width: 40%;
 }
-.mainnav .logo img {
-  width: 100px;
-  display: inline-block;
-  margin: 0;
-  position: absolute;
-  left: 0.5%;
-  top: 0.5%;
-}
 @media (min-width: 250px) {
-  .mainnav .logo img {
+  .mainnav .logo {
     width: 15%;
     top: 0.2%;
     left: 0.2%;
   }
 }
-.mainnav .logo img:hover {
+.mainnav .logo:hover {
   opacity: 0.7;
 }
-.mainnav .logo h1 {
+.mainnav h1 {
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 2.8rem;
@@ -214,7 +200,7 @@ html {
   top: 5%;
 }
 @media (min-width: 250px) {
-  .mainnav .logo h1 {
+  .mainnav h1 {
     text-align: left;
     line-height: 0.8rem;
     font-size: 0.7rem;
@@ -223,25 +209,39 @@ html {
     top: 1%;
   }
 }
-.mainnav .logo h1 span {
+@media (min-width: 800px) {
+  .mainnav h1 {
+    font-size: 1.9rem;
+    line-height: 1.8rem;
+  }
+}
+.mainnav h1 span {
   font-weight: lighter;
 }
 @media (min-width: 250px) {
-  .mainnav .logo h1 span {
+  .mainnav h1 span {
     font-weight: 200;
   }
 }
-.mainnav nav {
-  width: 50%;
+nav {
+  width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 250px) {
-  .mainnav nav {
+  nav {
     width: 100%;
     position: relative;
-    right: 7%;
+    right: 0;
   }
 }
-.mainnav nav ul {
+@media (min-width: 800px) {
+  nav {
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+  }
+}
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -249,7 +249,7 @@ html {
   width: 70%;
 }
 @media (min-width: 250px) {
-  .mainnav nav ul {
+  nav ul {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -258,19 +258,36 @@ html {
     align-items: flex-start;
   }
 }
-.mainnav nav ul li a {
+@media (min-width: 800px) {
+  nav ul {
+    width: 80%;
+  }
+}
+nav ul li a {
   font-size: 2.3rem;
   color: whitesmoke;
 }
 @media (min-width: 250px) {
-  .mainnav nav ul li a {
+  nav ul li a {
     font-size: 1.3rem;
   }
 }
-.mainnav nav ul li a:hover {
+@media (min-width: 800px) {
+  nav ul li a {
+    font-size: 2.8rem;
+    color: whitesmoke;
+  }
+}
+nav ul li a:hover {
   color: #cf5627;
 }
-.mainnav .login .a {
+@media (min-width: 800px) {
+  .login {
+    width: 20%;
+    text-align: right;
+  }
+}
+.login .a {
   color: whitesmoke;
   text-decoration: none;
   background: none;
@@ -278,28 +295,41 @@ html {
   font-weight: bolder;
 }
 @media (min-width: 250px) {
-  .mainnav .login .a {
+  .login .a {
     display: none;
   }
 }
-.mainnav .login .a:hover {
+@media (min-width: 800px) {
+  .login .a {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+.login .a:hover {
   color: #cf5627;
 }
 @media (min-width: 250px) {
-  .mainnav .login a i {
+  .login a i {
     color: whitesmoke;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 250px) {
-  .mainnav .login a i:hover {
+  .login a i:hover {
     color: #cf5627;
+  }
+}
+@media (min-width: 800px) {
+  .login a i {
+    display: none;
   }
 }
 @media (min-width: 800px) {
   #aboutpg .mainnav nav {
     text-align: center;
     margin: 0 auto;
+    width: 100%;
   }
 }
 @media (min-width: 800px) {
@@ -384,6 +414,11 @@ html {
     margin-top: 45%;
   }
 }
+@media (min-width: 800px) {
+  .header .headertxt {
+    margin-top: 15%;
+  }
+}
 .header .headertxt h1 {
   margin-bottom: 1%;
   font-size: 3rem;
@@ -396,6 +431,25 @@ html {
     margin: 0 auto;
   }
 }
+@media (min-width: 500px) {
+  .header .headertxt h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 0;
+    color: #dbca69;
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .header .headertxt h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 0;
+    color: #dbca69;
+    margin-bottom: 3.3%;
+    width: 80%;
+  }
+}
 .header .headertxt h2 {
   font-size: 2.3rem;
   font-weight: 600;
@@ -406,6 +460,14 @@ html {
   .header .headertxt h2 {
     font-size: 1rem;
     line-height: normal;
+  }
+}
+@media (min-width: 800px) {
+  .header .headertxt h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.8%;
+    position: relative;
+    top: 0;
   }
 }
 .header .headertxt h2 span {
@@ -425,6 +487,13 @@ html {
     font-size: 0.7rem;
     padding: 3% 7%;
     border-radius: 5px;
+  }
+}
+@media (min-width: 800px) {
+  .header .headertxt a {
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    border-radius: 10px;
   }
 }
 .header .headertxt a:hover {
@@ -510,13 +579,7 @@ html {
   }
 }
 .prodsec {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   width: 100%;
-  padding: 1%;
-  margin: 18% auto;
   background: #ba4d23;
 }
 @media (min-width: 250px) {
@@ -528,11 +591,28 @@ html {
     padding: 7%;
     background: #8f3b1b;
     margin-bottom: 0;
+    margin-top: 29%;
+  }
+}
+@media (min-width: 800px) {
+  .prodsec {
+    margin-top: 15%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 }
 @media (min-width: 250px) {
   .prodsec .prodinfo {
     margin: 7% 0;
+  }
+}
+@media (min-width: 800px) {
+  .prodsec .prodinfo {
+    width: 27%;
+    margin: 0;
   }
 }
 .prodsec div h2 {
@@ -547,9 +627,19 @@ html {
     margin: 2% 0;
   }
 }
+@media (min-width: 800px) {
+  .prodsec div h2 {
+    font-size: 2.7rem;
+  }
+}
 @media (min-width: 250px) {
   .prodsec div h2 i {
     transform: rotate(-25deg);
+  }
+}
+@media (min-width: 800px) {
+  .prodsec div h2 i {
+    margin: 3% 0;
   }
 }
 @media (min-width: 250px) {
@@ -577,6 +667,12 @@ html {
     line-height: 1.5rem;
   }
 }
+@media (min-width: 800px) {
+  .prodsec div p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
 @media (min-width: 250px) {
   .ctabtn {
     display: block;
@@ -601,6 +697,11 @@ html {
     padding: 3.5%;
     border-radius: 5px;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 800px) {
+  .ctabtn a {
+    display: none;
   }
 }
 .ctabtn a:hover {
@@ -802,6 +903,12 @@ html {
     font-size: 1.9rem;
   }
 }
+@media (min-width: 800px) {
+  footer i {
+    font-size: 2.7rem;
+    margin: 2% 1%;
+  }
+}
 @media (min-width: 250px) {
   footer i:hover {
     color: whitesmoke;
@@ -815,6 +922,11 @@ html {
 @media (min-width: 500px) {
   footer p {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 800px) {
+  footer p {
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 250px) {

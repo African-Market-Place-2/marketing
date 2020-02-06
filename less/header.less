@@ -11,6 +11,10 @@
       margin-top: 45%;
     }
 
+    @media @desktop {
+        margin-top: 15%;
+    }
+
     h1 {
       margin-bottom: 1%;
       font-size: 3rem;
@@ -21,6 +25,17 @@
         line-height: normal;
         margin: 0 auto;
       }
+
+      @media @tablet {
+        .headingtxt(2rem, 800, 0, #dbca69);
+          width: 100%;
+      }
+
+      @media @desktop {
+        .headingtxt(5rem, 800, 0, #dbca69);
+        margin-bottom: 3.3%;
+        width: 80%;
+      }
     }
 
     h2 {
@@ -29,6 +44,13 @@
       @media @mobile {
         font-size: 1rem;
         line-height: normal;
+      }
+
+      @media @desktop {
+          font-size: 3.5rem;
+          margin-bottom: 2.8%;
+          position: relative;
+          top: 0;
       }
 
       span {
@@ -45,6 +67,12 @@
         font-size: 0.7rem;
         padding: 3% 7%;
         border-radius: 5px;
+      }
+
+      @media @desktop {
+          font-size: 1.5rem;
+          padding: 1% 2%;
+          border-radius: 10px;
       }
 
       &:hover {

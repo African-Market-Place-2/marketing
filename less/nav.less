@@ -1,21 +1,12 @@
 .mainnav {
   padding: 1% 2%;
-  .display(row, space-between, flex-start);
+  .display(row, space-evenly, flex-start);
   width: 100%;
   text-align: center;
 
   .logo {
     .display(row, flex-start, center);
     width: 40%;
-
-    img {
-      width: 100px;
-      display: inline-block;
-      margin: 0;
-      position: absolute;
-      left: 0.5%;
-      top: 0.5%;
-      // background: red;
 
       @media @mobile {
         width: 15%;
@@ -46,6 +37,11 @@
         top: 1%;
       }
 
+      @media @desktop {
+        font-size: 1.9rem;
+        line-height: 1.8rem;
+      }
+
       span {
         font-weight: lighter;
 
@@ -57,12 +53,19 @@
   } // end logo
 
   nav {
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
 
     @media @mobile {
       width: 100%;
       position: relative;
-      right: 7%;
+      right: 0;
+    }
+
+    @media @desktop {
+      text-align: center;
+      margin: 0 auto;
+      right: 0;
     }
 
     ul {
@@ -75,6 +78,11 @@
         .display(row, space-evenly, flex-start);
       }
 
+      @media @desktop {
+        width: 80%;
+      
+      }
+
       li {
         a {
           font-size: 2.3rem;
@@ -82,6 +90,11 @@
 
           @media @mobile {
             font-size: 1.3rem;
+          }
+
+          @media @desktop {
+            font-size: 2.8rem;
+            color: @mainhdrtxt;
           }
 
           &:hover {
@@ -93,11 +106,21 @@
   } // end nav
 
   .login {
+    @media @desktop {
+      width: 20%;
+      text-align: right;
+    }
     .a {
       .links(@mainhdrtxt, none, 1rem, bolder);
 
       @media @mobile {
         display: none;
+      }
+
+      @media @desktop {
+        display: block;
+        width: 100%;
+        font-size: 1.3rem;
       }
 
       &:hover {
@@ -117,10 +140,15 @@
             color: lighten(@mainnavbrown, 15%);
           }
         } // end hover
+
+        @media @desktop {
+          display: none;
+        }
       } // end i
     } // end a
+
+
   } // end login
-} // End mainnav
 
 // ABOUT PAGE STYLES
 #aboutpg {
@@ -129,6 +157,7 @@
       @media @desktop {
         text-align: center;
         margin: 0 auto;
+        width:100%;
       
       }
 
